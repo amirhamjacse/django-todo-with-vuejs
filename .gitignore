@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Database files
+*.sqlite3
+
+# Django secret key and environment variables
+.env
+*.env
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
+# Logs
+*.log
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Test results
+nosetests.xml
+*.cover
+*.log
+test-results/
+
+# Pytest
+.cache
+
+# VS Code settings
+.vscode/
+
+# Python virtual environment
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Misc
+*.DS_Store
+*.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+
+# MyPy
+.mypy_cache/
