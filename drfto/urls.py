@@ -45,6 +45,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('drf/', include('todo.urls')),
     path('product/', include('products.urls')),
+    path('task/', include('task.urls')),
     # path('task/', TaskView.as_view(), name='taskview'),
     # path('task/update/<int:pk>/', TaskView.as_view(), name='taskupdate'),
     # path('task/partial/update/<int:pk>/', TaskView.as_view(), name='taskupdate_partial')

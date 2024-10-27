@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'todo',
     'corsheaders',
     'products',
+    'task',
 ]
 
 MIDDLEWARE = [
