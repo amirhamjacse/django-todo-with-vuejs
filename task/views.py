@@ -12,4 +12,11 @@ class TaskView(APIView):
         task_objects = Task.objects.all()
         serialize = TaskSerializer(task_objects, many=True )
         return Response(data = serialize.data, status=status.HTTP_200_OK)
-    
+
+
+    def post(self, request):
+        task_datas = TaskSerializer(data=request.data, )
+        if task_datas.is_valid():
+            task_datas.save()
+            return Response(task_datas.data, status=status.HTTP_201_CREATED)
+        return Response(task_datas.data, status=status.HTTP_400_BAD_REQUEST)
