@@ -20,3 +20,7 @@ class TaskView(APIView):
             task_datas.save()
             return Response(task_datas.data, status=status.HTTP_201_CREATED)
         return Response(task_datas.data, status=status.HTTP_400_BAD_REQUEST)
+
+    def patch(self, *args, **kwarg):
+        pk = self.kwargs['pk']
+        task_intance = Task.objects.filter(pk=pk).last()
